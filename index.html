@@ -1,18 +1,131 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>MC Host</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluCloud - Minecraft Hosting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #00d4ff;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .feature-box {
+            background: #1a1a1a;
+            margin: 10px;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .feature-box h3 {
+            margin-top: 0;
+            color: #00d4ff;
+        }
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+        }
+        button {
+            background: #00d4ff;
+            border: none;
+            padding: 10px 20px;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00b0d4;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>AluCloud</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#login">Login</a>
+            <a href="#panel">Panel</a>
+        </nav>
+    </header>
 
-  <div class="container">
-    <h1>Welcome to MC Host</h1>
-    <p>Free Minecraft Hosting Demo</p>
+    <section class="hero" id="home">
+        <h2>Welcome to AluCloud</h2>
+        <p>Your ultimate free Minecraft hosting platform.</p>
+        <button onclick="window.location.href='#login'">Get Started</button>
+    </section>
 
-    <a href="login.html">Login</a> |
-    <a href="panel.html">Panel</a>
-  </div>
+    <section class="features" id="features">
+        <div class="feature-box">
+            <h3>Fast Servers</h3>
+            <p>Lightning fast servers with zero lag and maximum uptime.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Free Hosting</h3>
+            <p>Completely free Minecraft server hosting without hidden fees.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Easy Panel</h3>
+            <p>Manage your server easily with our intuitive control panel.</p>
+        </div>
+    </section>
 
+    <section id="login" style="padding:50px; text-align:center;">
+        <h2>Login to Your AluCloud Account</h2>
+        <input type="text" placeholder="Username" style="padding:10px; margin:5px;"><br>
+        <input type="password" placeholder="Password" style="padding:10px; margin:5px;"><br>
+        <button>Login</button>
+    </section>
+
+    <section id="panel" style="padding:50px; text-align:center;">
+        <h2>Your AluCloud Server Panel</h2>
+        <p>Manage your servers, view IPs, start/stop with ease.</p>
+        <button>Go to Panel</button>
+    </section>
+
+    <footer>
+        &copy; 2025 AluCloud. All rights reserved.
+    </footer>
 </body>
 </html>
